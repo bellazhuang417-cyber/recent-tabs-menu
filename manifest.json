@@ -4,12 +4,24 @@
   "version": "1.0.0",
   "description": "右键菜单直接列出最近访问的 5 个标签页，点击跳转。解决从 Claude Code 切回浏览器时找不到刚才在看的页面的问题。",
   "permissions": ["tabs", "contextMenus", "alarms"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "minimum_chrome_version": "121",
   "background": {
     "service_worker": "background.js"
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "最近访问的标签页"
+    "default_title": "最近访问的标签页",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
   }
 }
